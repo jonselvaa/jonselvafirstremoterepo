@@ -1,1 +1,22 @@
 hello git
+
+
+git init (to initialize to a local repo)
+git touch file1.txt
+git add file1.txt (adding to the staging env)
+git commit -m "file1 commited" (comitted to master branch)
+
+git checkout -b mybranch1 (creates a new branch and switches to it)
+git touch file2.txt
+git add file2.txt (adding to the staging env)
+git commit -m "file1 commited" (comitted to mtbranch1 branch)
+
+git checkout master (switching branch to master)
+ls (you notice only file1.txt exists)
+git checkout mybranch1 (switching branch to mybranch1)
+ls (you notice both file1.txt and file2.txt exist)
+
+create remote repo in GitHub
+git remote add origin https://github.com/jonselvaa/jonselvafirstremoterepo.git
+git config --global http.sslVerify false
+git push -u origin master (for commited the file1.txt to remote repo)
